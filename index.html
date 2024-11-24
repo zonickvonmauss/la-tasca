@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería La Tasca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="/images/logo.jpg" alt="La Tasca" class="navbar-logo">
+                    La Tasca
+                </a>
+
+                <!-- Botón de menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Botón de llamada a la acción -->
+                    <a href="order.html" class="btn custom-btn ms-lg-3">Ordenar Ahora</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <section class="carousel-section">
+        <div id="cafeteriaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#cafeteriaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#cafeteriaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#cafeteriaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Contenido del Carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7000">
+                    <img src="/images/carrousel-1.jpg" class="d-block w-100 fade-in" alt="Café delicioso">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>El mejor café de la ciudad</h5>
+                        <p>Disfruta de una experiencia única en Cafetería El Aroma.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="/images/carrousel-2.jpg" class="d-block w-100 slide-in" alt="Ambiente acogedor">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Un lugar acogedor</h5>
+                        <p>Perfecto para pasar el día trabajando o relajándote.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="/images/carrousel-3.jpg" class="d-block w-100 zoom-in" alt="Promoción especial">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Promociones imperdibles</h5>
+                        <p>Ven y prueba nuestro menú especial de temporada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeteriaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeteriaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section class="info-section py-5 bg-light">
+        <div class="container">
+            <!-- Título -->
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2 class="section-title">¿Por qué elegirnos?</h2>
+                    <p class="section-subtitle">Te ofrecemos más que solo café, ¡te ofrecemos una experiencia!</p>
+                </div>
+            </div>
+            
+            <!-- Primera fila: Historia, Menú y Diferenciadores -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <img src="/images/historia.jpg" class="card-img-top rounded" alt="Nuestra historia">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuestra historia</h5>
+                            <p class="card-text">Con más de 10 años en el corazón de la ciudad, somos la cafetería favorita para quienes buscan calidad y calidez.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <img src="/images/promo-2.jpg" class="card-img-top rounded" alt="Menú destacado">
+                        <div class="card-body">
+                            <h5 class="card-title">Menú destacado</h5>
+                            <p class="card-text">Descubre nuestras especialidades: capuchinos cremosos, pasteles caseros y opciones veganas, perfectas para cada momento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <img src="/images/granos-café.jpg" class="card-img-top rounded" alt="Ingredientes de calidad">
+                        <div class="card-body">
+                            <h5 class="card-title">Ingredientes de calidad</h5>
+                            <p class="card-text">Solo utilizamos granos de café seleccionados y productos frescos para garantizar sabores auténticos y deliciosos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------testimonios------------------------->
+            <section id="testimonios" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center text-dark fw-bold mb-4">Lo que dicen nuestros clientes</h2>
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Testimonio 1 -->
+                            <div class="carousel-item active">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div class="testimonial-img-container">
+                                        <img src="/images/mich.jpg" alt="Cliente 1" class="testimonial-img">
+                                    </div>
+                                    <h5 class="text-dark">Michelle Paez</h5>
+                                    <p class="text-muted">"El café es excelente y el ambiente es muy acogedor. ¡Mi lugar favorito para relajarme después del trabajo!"</p>
+                                </div>
+                            </div>
+                            <!-- Testimonio 2 -->
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div class="testimonial-img-container">
+                                        <img src="/images/rebeca.jpg" alt="Cliente 2" class="testimonial-img">
+                                    </div>
+                                    <h5 class="text-dark">Rebeca Valdivia</h5>
+                                    <p class="text-muted">"Me encanta el menú de postres. Los pasteles son deliciosos y el servicio es impecable."</p>
+                                </div>
+                            </div>
+                            <!-- Testimonio 3 -->
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div class="testimonial-img-container">
+                                        <img src="/images/daniel.jpg" alt="Cliente 3" class="testimonial-img">
+                                    </div>
+                                    <h5 class="text-dark">Daniel Pulido</h5>
+                                    <p class="text-muted">"Siempre disfruto las reuniones aquí. ¡Un lugar perfecto para compartir con amigos!"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            
+
+            <!-- Mapa de Google Estilizado -->
+            <div class="map-section py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="map-header text-center mb-4">
+                                <h3 class="section-title">Visítanos</h3>
+                                <p class="section-subtitle">Estamos ubicados en el corazón de la ciudad. ¡Ven y disfruta de la mejor experiencia cafetera!</p>
+                            </div>
+                            <div class="map-container shadow rounded">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.1396263315356!2d-97.1014630889818!3d18.84766786800576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5033f662a72ad%3A0xca0087b9fab269ef!2sEl%20Jolgorio%20Tienda%20Colectiva!5e0!3m2!1ses-419!2smx!4v1732376910674!5m2!1ses-419!2smx" 
+                                    width="100%" 
+                                    height="450" 
+                                    style="border:0; border-radius: 15px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Productos Destacados -->
+            <div class="productos-destacados py-5">
+                <div class="container">
+                    <div class="text-center mb-4">
+                        <h3 class="section-title">Productos Destacados</h3>
+                        <p class="section-subtitle">Descubre lo que nuestros clientes aman.</p>
+                    </div>
+                    <div id="productosCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Producto 1 -->
+                            <div class="carousel-item active">
+                                <img src="/images/capuchino.jpg" class="d-block w-100 rounded" alt="Café Latte">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Café Latte</h5>
+                                    <p>Cremoso, delicioso y perfecto para cualquier momento del día.</p>
+                                </div>
+                            </div>
+                            <!-- Producto 2 -->
+                            <div class="carousel-item">
+                                <img src="/images/pastel.jpg" class="d-block w-100 rounded" alt="Muffin de Chocolate">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Muffin de Chocolate</h5>
+                                    <p>Un postre que hará que vuelvas por más.</p>
+                                </div>
+                            </div>
+                            <!-- Producto 3 -->
+                            <div class="carousel-item">
+                                <img src="/images/bagette.jpg" class="d-block w-100 rounded" alt="Capuchino Especial">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Capuchino Especial</h5>
+                                    <p>Preparado con una mezcla única de café y especias.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controles del Carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuevo Pie de Página -->
+    <footer class="footer-simple bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Información Básica -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-uppercase fw-bold">Cafetería La Tasca</h5>
+                    <p class="mb-1">Sur 9, # 249 entre Oriente 6 y 4, Orizaba</p>
+                    <p class="mb-1">Tel: +52 272 130 6508</p>
+                    <p>Email: latasca@gmail.com</p>
+                </div>
+                <!-- Enlaces Rápidos -->
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline">
+                        <li class="list-inline-item mx-2"><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li class="list-inline-item mx-2"><a href="about.html" class="footer-link">Sobre Nosotros</a></li>
+                        <li class="list-inline-item mx-2"><a href="menu.html" class="footer-link">Menú</a></li>
+                        <li class="list-inline-item mx-2"><a href="contact.html" class="footer-link">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 Cafetería La Tasca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

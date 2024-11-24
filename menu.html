@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Nuestra Cafetería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+<body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="/images/logo.jpg" alt="La Tasca" class="navbar-logo">
+                    La Tasca
+                </a>
+
+                <!-- Botón de menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Botón de llamada a la acción -->
+                    <a href="order.html" class="btn custom-btn ms-lg-3">Ordenar Ahora</a>
+                </div>
+            </div>
+        </nav>
+
+    <!------------ Carrousel ------------>
+    <section class="container my-5">
+        <h2 class="text-center fw-bold text-dark mb-4">Promociones Especiales</h2>
+        <div id="promotionsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#promotionsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#promotionsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#promotionsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+    
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="/images/promo-1.jpg" class="d-block w-100" alt="Promoción 1">
+                    <div class="carousel-caption">
+                        <h5 class="text-bg-dark rounded-pill px-3 py-2">3x2 en Frappes</h5>
+                        <p class="text-bg-dark rounded px-3 py-1">Solo válido los martes. ¡No te lo pierdas!</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="/images/promo-5.jpg" class="d-block w-100" alt="Promoción 2">
+                    <div class="carousel-caption">
+                        <h5 class="text-bg-dark rounded-pill px-3 py-2">3 Frappes por $115</h5>
+                        <p class="text-bg-dark rounded px-3 py-1">Disfrútalo con tu sabor favorito.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="/images/promo-2.jpg" class="d-block w-100" alt="Promoción 3">
+                    <div class="carousel-caption">
+                        <h5 class="text-bg-dark rounded-pill px-3 py-2">Burritos</h5>
+                        <p class="text-bg-dark rounded px-3 py-1">Refrescante y delicioso, ¡ideal para cualquier hora!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#promotionsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promotionsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    
+
+    <!-- Encabezado -->
+    <header class="bg-light py-5 text-center">
+        <h1 class="fw-bold text-dark">Descubre nuestro menú</h1>
+        <p class="text-muted">Delicias para todos los gustos, preparadas con los mejores ingredientes.</p>
+    </header>
+
+    <!-- Sección del Menú -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bold text-dark mb-4">Nuestro Menú</h2>
+    
+        <!-- Contenedor de Bebidas -->
+        <div class="category-container mb-5">
+            <h3 class="category-title text-center mb-4">Bebidas</h3>
+            <div class="row">
+    
+                <!-- Tarjeta Producto: Bebida Fría -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/chocolate.jpg" class="card-img-top" alt="Chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Caliente</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoBebidaChocolate" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoBebidaChocolate" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Chocolate caliente espolvoreado con polvo de canela.</p>
+                                <p><strong>Precio:</strong> $22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta Producto: Bebida Caliente -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/lechero.jpg" class="card-img-top" alt="Bebida Caliente">
+                        <div class="card-body">
+                            <h5 class="card-title">Café Lechero</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoBebidaLechero" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoBebidaLechero" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Un delicioso café lechero, con leche espumosa y el toque perfecto de café.</p>
+                                <p><strong>Precio:</strong> $22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta Producto: Frappé de Vainilla -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/frappe.jpg" class="card-img-top" alt="Frappé de Vainilla">
+                        <div class="card-body">
+                            <h5 class="card-title">Frappé de Vainilla</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoFrappéVainilla" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoFrappéVainilla" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Un frappé dulce y frío, perfecto para el verano, con un toque de vainilla.</p>
+                                <p><strong>Precio:</strong> $30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta Producto: Cold Brew -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/capuchino.jpg" class="card-img-top" alt="Cold Brew">
+                        <div class="card-body">
+                            <h5 class="card-title">Capuchino</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoCapuchino" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoCapuchino" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Café preparado en frío, perfecto para los amantes del café fuerte.</p>
+                                <p><strong>Precio:</strong> $32</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- Contenedor de Alimentos -->
+        <div class="category-container mb-5">
+            <h3 class="category-title text-center mb-4">Alimentos</h3>
+            <div class="row">
+    
+                <!-- Tarjeta Producto: Pastel de Chocolate -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/tarta.jpg" class="card-img-top" alt="Pastel de Chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarta de Chocolate</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoTarta" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoTarta" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Una deliciosa tarta de chocolate recién horneado, con un toque de crema.</p>
+                                <p><strong>Precio:</strong> $22.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta Producto: Empanada de Jamón y Queso -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/ensalada.jpg" class="card-img-top" alt="Empanada de Jamón y Queso">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensalada</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoEnsalada" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoEnsalada" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Ensalada de pollo, perfecta para un desayuno rápido.</p>
+                                <p><strong>Precio:</strong> $27</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta Producto: Croissant -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/bagette.jpg" class="card-img-top" alt="Croissant">
+                        <div class="card-body">
+                            <h5 class="card-title">Baguette</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoBaguette" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoBaguette" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Baguette suave y mantecoso, ideal para acompañar tu café.</p>
+                                <p><strong>Precio:</strong> $2.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta Producto: Sandwich de Pollo -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/hamburguesa.jpg" class="card-img-top" alt="Sandwich de Pollo">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburguesa</h5>
+                            <p class="card-text">Haz clic para ver más detalles</p>
+                            <a href="#productoHamburguesa" class="btn btn-primary" data-bs-toggle="collapse">Ver Detalles</a>
+                        </div>
+                        <!-- Descripción del Producto (Colapsable) -->
+                        <div id="productoHamburguesa" class="collapse">
+                            <div class="card-body">
+                                <p><strong>Descripción:</strong> Hamburguesa de res, lechuga y mayonesa.</p>
+                                <p><strong>Precio:</strong> $4.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nuevo Pie de Página -->
+    <footer class="footer-simple bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Información Básica -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="text-uppercase fw-bold">Cafetería La Tasca</h5>
+                    <p class="mb-1">Sur 9, # 249 entre Oriente 6 y 4, Orizaba</p>
+                    <p class="mb-1">Tel: +52 272 130 6508</p>
+                    <p>Email: latasca@gmail.com</p>|
+                </div>
+                <!-- Enlaces Rápidos -->
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline">
+                        <li class="list-inline-item mx-2"><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li class="list-inline-item mx-2"><a href="about.html" class="footer-link">Sobre Nosotros</a></li>
+                        <li class="list-inline-item mx-2"><a href="menu.html" class="footer-link">Menú</a></li>
+                        <li class="list-inline-item mx-2"><a href="contact.html" class="footer-link">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 Cafetería La Tasca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
